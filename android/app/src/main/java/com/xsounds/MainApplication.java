@@ -3,10 +3,6 @@ package com.xsounds;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
-import com.rnim.rn.audio.ReactNativeAudioPackage;
-import com.reactnativenavigation.NavigationReactPackage;
-import com.zmxv.RNSound.RNSoundPackage;
-import com.idehub.GoogleAnalyticsBridge.GoogleAnalyticsBridgePackage;
 import org.devio.rn.splashscreen.SplashScreenReactPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -28,10 +24,6 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new ReactNativeAudioPackage(),
-            new NavigationReactPackage(),
-            new RNSoundPackage(),
-            new GoogleAnalyticsBridgePackage(),
             new SplashScreenReactPackage()
       );
     }

@@ -1,0 +1,36 @@
+[
+  {
+    "sounds": {
+      "horn": {
+        "icon": "../img/icons/horn.svg",
+        "sound": "../tones/horn.mp3",
+        "text": "horn"
+      },
+      "fart": {
+        "icon": "../img/icons/fart.svg",
+        "sound": "../tones/fart.mp3",
+        "text": "fart"
+      },
+      "laugh": {
+        "icon": "../img/icons/laugh.svg",
+        "sound": "../tones/laugh.mp3",
+        "text": "laugh"
+      },
+      "horn2": {
+        "icon": "../img/icons/horn.svg",
+        "sound": "../tones/horn.mp3",
+        "text": "horn"
+      },
+      "fart2": {
+        "icon": "../img/icons/fart.svg",
+        "sound": "../tones/fart.mp3",
+        "text": "fart"
+      },
+      "laugh2": {
+        "icon": "../img/icons/laugh.svg",
+        "sound": "../tones/laugh.mp3",
+        "text": "laugh"
+      }
+    }
+  }
+]
