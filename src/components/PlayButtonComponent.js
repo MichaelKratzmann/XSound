@@ -5,36 +5,18 @@ import {
     Text,
     View,
     Button,
-    ImageView,
+    Image,
 } from 'react-native';
+import {styles} from "../styles/style";
 
 
 export default class PlayButtonComponent extends Component<{}> {
     render() {
         return (
-            <View style={styles.container}>
-                <Button style={styles.welcome}/>
-                <ImageView/>
+            <View style={styles.playButton}>
+                <Text>{this.props.text}</Text>
+                <Image style={styles.playButtonIcon} resizeMode={'cover'} source={{uri: this.props.icon}}/>
             </View>
         );
     }
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#F5FCFF',
-    },
-    welcome: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10,
-    },
-    instructions: {
-        textAlign: 'center',
-        color: '#333333',
-        marginBottom: 5,
-    },
-});
