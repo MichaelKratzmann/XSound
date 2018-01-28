@@ -26,15 +26,22 @@ export default class ButtonList extends Component<{}> {
                 "text": item.text,
                 "sound": item.sound,
                 "icon": item.icon,
+                "isRecordButton": false
             })
-        })
+        });
+        items.push({
+            "text": "ADD",
+            "sound": "no",
+            "icon": "no",
+            "isRecordButton": true
+        });
         return (
             <GridView
                 itemDimension={80}
                 items={items}
-                spacing={10}
+                spacing={2}
                 renderItem={item => (
-                    <PlayButtonComponent text={item.text} sound={item.sound} icon={item.icon}/>
+                    <PlayButtonComponent isRecordButton={item.isRecordButton} text={item.text} sound={item.sound} icon={item.icon}/>
                 )}
             />
         );

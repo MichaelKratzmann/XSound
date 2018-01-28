@@ -5,38 +5,76 @@ import {
     Image,
 } from 'react-native';
 import {styles} from "../styles/style";
+import SoundRecorder from 'react-native-sound-recorder';
 var Sound = require('react-native-sound');
-var whoosh;
 export default class PlayButtonComponent extends Component<{}> {
 
     onPressButton(text, sound) {
-        console.log("SOUND" , sound);
         this.playSound(sound);
     }
 
-    playSound(sound){
-        var whoosh = new Sound(sound, Sound.MAIN_BUNDLE, (error) => {
+    recordFile(){
+        console.log("record");
+        let PATH_CACHE ="../styles/";
+        SoundRecorder.start(PATH_CACHE + '/test.mp4')
+            .then(function() {
+                console.log('started recording');
+            });
+
+
+    }
+
+    playSound(sound) {
+        console.log(sound)
+        var file = new Sound(sound, (error) => {
             if (error) {
                 console.log('failed to load the sound', error);
                 return;
             }
-            whoosh.play((success) => {
+            file.play((success) => {
                 if (success) {
                     console.log('successfully finished playing');
                 } else {
                     console.log('playback failed due to audio decoding errors');
-                    whoosh.reset();
+                    file.reset();
                 }
             });
         });
+        SoundRecorder.stop()
+            .then(function(path) {
+                console.log('stopped recording, audio file saved at: ' + path);
+            });
     }
 
-    render() {
+
+    renderRecordButton() {
         return (
-            <TouchableOpacity onPress={() => this.onPressButton(this.props.text, this.props.sound)} style={styles.playButton}>
-                <Image source={this.props.icon} style={styles.playButtonIcon} />
+            <TouchableOpacity
+                onPress={() => this.recordFile()}
+                style={styles.playButton}
+            >
                 <Text>{this.props.text}</Text>
             </TouchableOpacity>
         );
+    }
+
+
+    render() {
+        if (this.props.isRecordButton) {
+            return(
+                this.renderRecordButton()
+            )
+
+        } else {
+            return (
+                <TouchableOpacity
+                    onPress={() => this.onPressButton(this.props.text, this.props.sound)}
+                    style={styles.playButton}
+                >
+                    <Image source={this.props.icon} style={styles.playButtonIcon}/>
+                    <Text>{this.props.text}</Text>
+                </TouchableOpacity>
+            );
+        }
     }
 }

@@ -5,9 +5,7 @@ import {
     Image,
 } from 'react-native';
 
-
 export default class SpeakerComponent extends Component<{}> {
-
     renderHoles() {
         var amount = (this.props.width * this.props.height) / (22 * 22);
         let items = [];
@@ -18,12 +16,11 @@ export default class SpeakerComponent extends Component<{}> {
             width: this.props.width - 30,
             height: this.props.height,
             flexWrap: 'wrap',
-            backgroundColor: 'yellow',
+            backgroundColor: 'red',
         }}>{items}</View>);
     }
 
     render() {
-        console.log("w: ", this.props.width);
         return (
             <View style={[styles.speaker, {width: this.props.width, height: this.props.height}]}>
                 {this.renderHoles()}

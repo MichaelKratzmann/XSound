@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#8cff5f',
+        backgroundColor: 'red',
         alignSelf: 'stretch',
     },
     speaker: {
@@ -18,10 +18,8 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
     },
     buttonList: {
-        backgroundColor: 'orange',
-        height: 100000,
-        borderColor: 'green',
-        borderWidth: 2,
+        flex: 1,
+        backgroundColor: 'red',
         margin: 10,
         padding: 2,
     },
@@ -42,14 +40,23 @@ export const styles = StyleSheet.create({
     enabled: {
         backgroundColor: 'green',
     },
+    speakerLine: {
+        shadowColor: '#4e4e4e',
+        shadowOffset: {width: 1,height: 1},
+        shadowOpacity: 0.3,
+        backgroundColor: '#4e4e4e',
+        height: 5,
+        width: 400,
+    },
+
     playButton: {
         borderWidth: 1,
         borderColor: '#fff',
         padding: 5,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#3b3b3b',
-        margin: 0,
+        backgroundColor: 'red',
+        margin: 2,
     },
     playButtonPressed: {
         borderWidth: 0,
