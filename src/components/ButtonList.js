@@ -1,14 +1,18 @@
 import React, {Component} from 'react';
 import {styles} from '../styles/style';
 import {
-    Text,
     View,
 } from 'react-native';
-import PlayButtonComponent from './PlayButtonComponent';
-
+import GridView from 'react-native-super-grid';
+import {data} from '@assets/assets';
+import PlayButtonComponent from './PlayButtonComponent'
 
 export default class ButtonList extends Component<{}> {
-     clearArray(array) {
+    constructor(props) {
+        super(props);
+    }
+
+    clearArray(array) {
         while (array.length) {
             array.pop();
         }
@@ -17,24 +21,29 @@ export default class ButtonList extends Component<{}> {
     renderButtons() {
         let items = [];
         this.clearArray(items);
-        this.props.data.forEach(function (item) {
-            items.push(<PlayButtonComponent key={item.text} text={item.text} sound={item.sound} icon={item.icon}/>);
+        data.forEach(function (item) {
+            items.push({
+                "text": item.text,
+                "sound": item.sound,
+                "icon": item.icon,
+            })
         })
-        return (<View style={{
-            alignItems: 'flex-start',
-            padding: 0,
-            width: this.props.width - 30,
-            height: this.props.height,
-            flexWrap: 'wrap',
-            backgroundColor: 'orange',
-        }}>{items}</View>);
+        return (
+            <GridView
+                itemDimension={80}
+                items={items}
+                spacing={10}
+                renderItem={item => (
+                    <PlayButtonComponent text={item.text} sound={item.sound} icon={item.icon}/>
+                )}
+            />
+        );
     }
 
     render() {
         return (
             <View style={[styles.buttonList, {width: this.props.width, height: this.props.height}]}>
                 {this.renderButtons()}
-                <Text>test</Text>
             </View>
         );
     }

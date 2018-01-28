@@ -11,7 +11,6 @@ import ButtonList from './ButtonList';
 
 export default class MainComponent extends Component<{}> {
     render() {
-        console.log(data);
         var {height, width} = Dimensions.get('window');
         return (
             <View style={styles.container}>

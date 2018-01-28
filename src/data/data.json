@@ -1,32 +1,32 @@
 [
   {
-    "icon": "../img/icons/horn.png",
-    "sound": "../tones/horn.mp3",
+    "icon": "hornIcon",
+    "sound": "horn.mp3",
     "text": "horn"
   },
   {
-    "icon": "../img/icons/fart.png",
-    "sound": "../tones/fart.mp3",
+    "icon": "fartIcon",
+    "sound": "fart.mp3",
     "text": "fart"
   },
   {
-    "icon": "../img/icons/laugh.png",
-    "sound": "../tones/laugh.mp3",
+    "icon": "laughIcon",
+    "sound": "laugh.mp3",
     "text": "laugh"
   },
   {
-    "icon": "../img/icons/horn.png",
-    "sound": "../tones/horn.mp3",
-    "text": "horn"
+    "icon": "hornIcon",
+    "sound": "horn.mp3",
+    "text": "horn2"
   },
   {
-    "icon": "../img/icons/fart.png",
-    "sound": "../tones/fart.mp3",
-    "text": "fart"
+    "icon": "fartIcon",
+    "sound": "fart.mp3",
+    "text": "fart2"
   },
   {
-    "icon": "../img/icons/laugh.png",
-    "sound": "../tones/laugh.mp3",
-    "text": "laugh"
+    "icon": "laughIcon",
+    "sound": "laugh.mp3",
+    "text": "laugh2"
   }
 ]

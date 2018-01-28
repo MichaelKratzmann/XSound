@@ -3,7 +3,6 @@ import {styles} from '../styles/style';
 import {
     View,
     Image,
-
 } from 'react-native';
 
 
@@ -16,8 +15,6 @@ export default class SpeakerComponent extends Component<{}> {
             items.push(<Image key={i} style={styles.hole} source={require('../img/icons/hole.png')}/>);
         }
         return (<View style={{
-            alignItems: 'flex-start',
-            padding: 0,
             width: this.props.width - 30,
             height: this.props.height,
             flexWrap: 'wrap',

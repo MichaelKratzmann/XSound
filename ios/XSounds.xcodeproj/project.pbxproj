@@ -56,6 +56,10 @@
 		DBFB93A6B16A4545A48BED60 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FCEA6FEFBB1F48E29C4B6985 /* Zocial.ttf */; };
 		EBECF8959A724DEABDAC7F74 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 035F4A1D2671433386044D05 /* SimpleLineIcons.ttf */; };
 		FC9F2F2314A249D5BC5D5944 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3429B64278004E9AB3E3EF12 /* EvilIcons.ttf */; };
+		AD96AA957A8345E798FFF492 /* libRNSoundPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7D670EF4B7E48A48CE8E46D /* libRNSoundPlayer.a */; };
+		836D384E6C524CFE94056123 /* libRNPlayAudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05049B88874B4DB3826C8625 /* libRNPlayAudio.a */; };
+		8500A1FDCDAF4A788445E0BA /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2C56771FE148AEA10E203A /* libRNSound.a */; };
+		B02AE32D44A740E2BE18FD27 /* libRNSound-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A595B272FBC047B8AA8695D1 /* libRNSound-tvOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -356,6 +360,13 @@
 		D6746940F202466F9FB9A9BA /* libReactNativeNavigation.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libReactNativeNavigation.a; sourceTree = "<group>"; };
 		F8E2F48A82E34503A8F559E2 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		FCEA6FEFBB1F48E29C4B6985 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		3A21AA561A8D47559D93AF35 /* RNSoundPlayer.xcodeproj */ = {isa = PBXFileReference; name = "RNSoundPlayer.xcodeproj"; path = "../node_modules/react-native-sound-player/ios/RNSoundPlayer.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		E7D670EF4B7E48A48CE8E46D /* libRNSoundPlayer.a */ = {isa = PBXFileReference; name = "libRNSoundPlayer.a"; path = "libRNSoundPlayer.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		7BFE72CB80AB45DFA17F9342 /* RNPlayAudio.xcodeproj */ = {isa = PBXFileReference; name = "RNPlayAudio.xcodeproj"; path = "../node_modules/react-native-play-audio/ios/RNPlayAudio.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		05049B88874B4DB3826C8625 /* libRNPlayAudio.a */ = {isa = PBXFileReference; name = "libRNPlayAudio.a"; path = "libRNPlayAudio.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		8EC979F5785F4E17A59AFDFA /* RNSound.xcodeproj */ = {isa = PBXFileReference; name = "RNSound.xcodeproj"; path = "../node_modules/react-native-sound/RNSound.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		8C2C56771FE148AEA10E203A /* libRNSound.a */ = {isa = PBXFileReference; name = "libRNSound.a"; path = "libRNSound.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		A595B272FBC047B8AA8695D1 /* libRNSound-tvOS.a */ = {isa = PBXFileReference; name = "libRNSound-tvOS.a"; path = "libRNSound-tvOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,6 +403,10 @@
 				87E182DAD84E4B62BEA78F28 /* libsqlite3.0.tbd in Frameworks */,
 				A99F8083FC45485E9010A8FA /* libReactNativeNavigation.a in Frameworks */,
 				93BCF65D6D32406BAFAF9B54 /* libRNAudio.a in Frameworks */,
+				AD96AA957A8345E798FFF492 /* libRNSoundPlayer.a in Frameworks */,
+				836D384E6C524CFE94056123 /* libRNPlayAudio.a in Frameworks */,
+				8500A1FDCDAF4A788445E0BA /* libRNSound.a in Frameworks */,
+				B02AE32D44A740E2BE18FD27 /* libRNSound-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +643,9 @@
 				0B0F16B313664C119AB34C0A /* RCTGoogleAnalyticsBridge.xcodeproj */,
 				D3DAE3D651854A07B67AACBE /* ReactNativeNavigation.xcodeproj */,
 				A8E653415C084E6C84531F03 /* RNAudio.xcodeproj */,
+				3A21AA561A8D47559D93AF35 /* RNSoundPlayer.xcodeproj */,
+				7BFE72CB80AB45DFA17F9342 /* RNPlayAudio.xcodeproj */,
+				8EC979F5785F4E17A59AFDFA /* RNSound.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1263,12 +1281,19 @@
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-navigation/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-audio-player-recorder/ios",
+					"$(SRCROOT)\..\node_modules\react-native-sound-player\ios",
+					"$(SRCROOT)\..\node_modules\react-native-play-audio\ios",
+					"$(SRCROOT)\..\node_modules\react-native-sound\RNSound",
 				);
 				INFOPLIST_FILE = XSoundsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1291,12 +1316,19 @@
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-navigation/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-audio-player-recorder/ios",
+					"$(SRCROOT)\..\node_modules\react-native-sound-player\ios",
+					"$(SRCROOT)\..\node_modules\react-native-play-audio\ios",
+					"$(SRCROOT)\..\node_modules\react-native-sound\RNSound",
 				);
 				INFOPLIST_FILE = XSoundsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1320,6 +1352,9 @@
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-navigation/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-audio-player-recorder/ios",
+					"$(SRCROOT)\..\node_modules\react-native-sound-player\ios",
+					"$(SRCROOT)\..\node_modules\react-native-play-audio\ios",
+					"$(SRCROOT)\..\node_modules\react-native-sound\RNSound",
 				);
 				INFOPLIST_FILE = XSounds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1345,6 +1380,9 @@
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-navigation/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-audio-player-recorder/ios",
+					"$(SRCROOT)\..\node_modules\react-native-sound-player\ios",
+					"$(SRCROOT)\..\node_modules\react-native-play-audio\ios",
+					"$(SRCROOT)\..\node_modules\react-native-sound\RNSound",
 				);
 				INFOPLIST_FILE = XSounds/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1377,11 +1415,18 @@
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-navigation/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-audio-player-recorder/ios",
+					"$(SRCROOT)\..\node_modules\react-native-sound-player\ios",
+					"$(SRCROOT)\..\node_modules\react-native-play-audio\ios",
+					"$(SRCROOT)\..\node_modules\react-native-sound\RNSound",
 				);
 				INFOPLIST_FILE = "XSounds-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1414,11 +1459,18 @@
 					"$(SRCROOT)/../node_modules/react-native-sound/RNSound",
 					"$(SRCROOT)/../node_modules/react-native-navigation/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-audio-player-recorder/ios",
+					"$(SRCROOT)\..\node_modules\react-native-sound-player\ios",
+					"$(SRCROOT)\..\node_modules\react-native-play-audio\ios",
+					"$(SRCROOT)\..\node_modules\react-native-sound\RNSound",
 				);
 				INFOPLIST_FILE = "XSounds-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -1447,6 +1499,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.XSounds-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1471,6 +1527,10 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.XSounds-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
