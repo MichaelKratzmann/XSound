@@ -5,6 +5,7 @@ import {
     Dimensions
 } from 'react-native';
 import SpeakerComponent from './SpeakerComponent';
+import StopComponent from './StopComponent';
 import ButtonList from './ButtonList';
 
 
@@ -15,7 +16,10 @@ export default class MainComponent extends Component<{}> {
             <View style={styles.container}>
             <View style={styles.header}/>
                 <SpeakerComponent width={width} height={height*(1/3)}/>
-                <ButtonList width={width} height={height*(2/3)}/>
+                <StopComponent width={width} stopSound={this.props.stopSound}/>
+                <ButtonList playSound={this.props.playSound}
+                            width={width}
+                            height={height*(5/8)}/>
             </View>
         );
     }

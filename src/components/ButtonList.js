@@ -7,16 +7,19 @@ import GridView from 'react-native-super-grid';
 import {data} from '@assets/assets';
 import PlayButtonComponent from './PlayButtonComponent'
 
+
 export default class ButtonList extends Component<{}> {
     constructor(props) {
         super(props);
     }
+
 
     clearArray(array) {
         while (array.length) {
             array.pop();
         }
     }
+
 
     renderButtons() {
         let items = [];
@@ -29,19 +32,18 @@ export default class ButtonList extends Component<{}> {
                 "isRecordButton": false
             })
         });
-        items.push({
-            "text": "ADD",
-            "sound": "no",
-            "icon": "no",
-            "isRecordButton": true
-        });
         return (
             <GridView
-                itemDimension={80}
+                itemDimension={70}
                 items={items}
                 spacing={2}
                 renderItem={item => (
-                    <PlayButtonComponent isRecordButton={item.isRecordButton} text={item.text} sound={item.sound} icon={item.icon}/>
+                    <PlayButtonComponent playSound={this.props.playSound}
+                                         stopSound={this.props.stopSound}
+                                         isRecordButton={item.isRecordButton}
+                                         text={item.text}
+                                         sound={item.sound}
+                                         icon={item.icon}/>
                 )}
             />
         );

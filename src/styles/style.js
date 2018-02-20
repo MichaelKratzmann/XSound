@@ -2,26 +2,45 @@ import {StyleSheet} from "react-native";
 
 export const styles = StyleSheet.create({
     header: {
-        height: 50
+       // height: 20,
     },
     container: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'red',
+        backgroundColor: 'rgb(60,0,0)',
         alignSelf: 'stretch',
     },
     speaker: {
-        backgroundColor: 'red',
-        alignSelf: 'stretch',
+        flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        alignSelf: 'stretch',
     },
+    speakerImg: {
+        justifyContent: 'center',
+        alignItems: 'center',
+        flex:1,
+        resizeMode: 'stretch',
+    },
+    stopComponent:{
+        flexDirection: 'row',
+        height: 75,
+        justifyContent: 'space-between',
+    },
+    textImg: {
+        resizeMode: 'center',
+        width: 250,
+        height: 75,
+        opacity: 0.7,
+    },
+
     buttonList: {
         flex: 1,
-        backgroundColor: 'red',
-        margin: 10,
-        padding: 2,
+        backgroundColor: 'rgb(60,0,0)',
+        marginLeft: 10,
+        marginRight: 10,
+        marginTop: 10,
     },
     hole: {
         width: 20,
@@ -30,16 +49,14 @@ export const styles = StyleSheet.create({
         alignItems: 'flex-start',
     },
     playButtonIcon: {
-        borderColor: '#000',
+        width: 30,
+        height: 30,
+    },
+    stopButton: {
         width: 20,
         height: 20,
     },
-    disabled: {
-        backgroundColor: 'red',
-    },
-    enabled: {
-        backgroundColor: 'green',
-    },
+
     speakerLine: {
         shadowColor: '#4e4e4e',
         shadowOffset: {width: 1,height: 1},
@@ -50,21 +67,21 @@ export const styles = StyleSheet.create({
     },
 
     playButton: {
-        borderWidth: 1,
-        borderColor: '#fff',
-        padding: 5,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'red',
-        margin: 2,
+        margin: 5,
     },
-    playButtonPressed: {
-        borderWidth: 0,
-        borderColor: '#fff',
-        padding: 5,
+    playButtonBG:{
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'rgba(0,0,0,0.5)',
-        margin: 0,
-    }
+        resizeMode: 'stretch',
+        width: 70,
+        height: 70,
+    },  stopButtonBG:{
+        justifyContent: 'center',
+        alignItems: 'center',
+        resizeMode: 'stretch',
+        width: 65,
+        height: 65,
+    },
 });
